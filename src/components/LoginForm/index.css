@@ -1,0 +1,119 @@
+.login-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-main-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 120px;
+  }
+}
+
+.large-app-logo-image {
+  height: 50px;
+  width: 200px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .large-app-logo-image {
+    align-self: center;
+    display: block;
+    height: 60px;
+    width: 250px;
+  }
+}
+
+.app-logo-image {
+  height: 50px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-logo-image {
+    display: none;
+  }
+}
+
+.login-image {
+  height: 220px;
+  width: 100%;
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .login-image {
+    order: -1;
+    height: 380px;
+    width: 600px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-container {
+    width: 300px;
+    padding: 80px;
+  }
+}
+
+.submit-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #64748b;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.input-box {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #64748b;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.error-msg {
+  color: #ff0b37;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
